@@ -1,0 +1,55 @@
+PODS:
+  - MaterialComponents/AnimationTiming (109.0.0)
+  - MaterialComponents/Availability (109.0.0)
+  - MaterialComponents/BottomNavigation (109.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Elevation (109.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (109.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (109.0.0)
+  - MaterialComponents/private/Application (109.0.0)
+  - MaterialComponents/private/Color (109.0.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Math (109.0.0)
+  - MaterialComponents/Ripple (109.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (109.0.0)
+  - MaterialComponents/ShadowLayer (109.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Typography (109.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
+
+DEPENDENCIES:
+  - MaterialComponents/BottomNavigation
+
+SPEC REPOS:
+  trunk:
+    - MaterialComponents
+    - MDFInternationalization
+
+SPEC CHECKSUMS:
+  MaterialComponents: efea7f96438838624ea3a4fcc881bfd6b3b0bb7b
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+
+PODFILE CHECKSUM: 41ee1b633624eb3b06d382672cbc63a3b91587ac
+
+COCOAPODS: 1.8.4
