@@ -10,7 +10,8 @@ import SwiftUI
 
 struct LandmarkDetail: View {
     @EnvironmentObject var userData: UserData
-    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var landmarkIndex: Int{
         userData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
@@ -52,6 +53,11 @@ struct LandmarkDetail: View {
                 self.userData.test+=1
             }) {
                 Text(String(userData.test))
+            }
+            Button(action:{
+                self.presentationMode.wrappedValue.dismiss()
+            }) {
+                Text("Back")
             }
             Spacer()
         }.edgesIgnoringSafeArea(.top)

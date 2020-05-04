@@ -26,7 +26,7 @@ struct ContentView: View {
         return NavigationView {
             GeometryReader { geometry in
                 ZStack(alignment: .leading) {
-                    LandmarkList(showMenu: self.$userData.showMenu)
+                    TabViewBottom(showMenu: self.$userData.showMenu)
                         .frame(width: geometry.size.width, height: geometry.size.height)
                         .offset(x: self.userData.showMenu ? geometry.size.width/2 : 0)
                     if self.userData.showMenu {

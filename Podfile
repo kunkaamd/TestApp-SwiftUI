@@ -4,7 +4,7 @@
 target 'TestApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'MaterialComponents/BottomNavigation'
+  pod 'Moya', '~> 14.0'
   # Pods for TestApp
 
   target 'TestAppTests' do
