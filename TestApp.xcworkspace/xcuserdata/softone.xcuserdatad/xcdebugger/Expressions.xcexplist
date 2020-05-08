@@ -10,5 +10,16 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "closure #1 in MovieView.body.getter:MovieView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "movieViewModel.listMovie">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in MoviesNetworkManager.getNewMovies(page:completion:):MoviesNetworkManager.swift">
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

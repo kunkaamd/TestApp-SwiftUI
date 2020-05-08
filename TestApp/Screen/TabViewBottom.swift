@@ -21,9 +21,13 @@ struct TabViewBottom: View {
                     Text("ListView Landmark")
                 }
                 MovieView().tabItem{
-                    Image(systemName: "3.square.fill")
+                    Image(systemName: "2.square.fill")
                     Text("ListView Movie")
                 }.environmentObject(MovieViewModel())
+                CustomView().tabItem {
+                    Image(systemName: "3.square.fill")
+                    Text("StoryBoard")
+                }
             }
             .navigationBarTitle("Title", displayMode: .inline)
             .navigationBarItems(leading: (

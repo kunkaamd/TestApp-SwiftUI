@@ -12,20 +12,22 @@ struct MovieView: View {
     @EnvironmentObject var movieViewModel: MovieViewModel
     
     var body: some View {
-        List(movieViewModel.listMovie, id: \.id) { movie in
-            Text(movie.title)
-                .onAppear{
-                    if(self.movieViewModel.listMovie.last?.id == movie.id && !self.movieViewModel.isLastPage ) {
-                        self.movieViewModel.fetchMovies()
-                    }
-            }
-        }.onAppear {
-            if(!self.movieViewModel.isLastPage) {
-                self.movieViewModel.fetchMovies()
+        VStack {
+            TimePicker()
+            List(movieViewModel.listMovie, id: \.id) { movie in
+                Text(movie.title ?? "khong ten")
+                    .onAppear{
+                        if(self.movieViewModel.listMovie.last?.id == movie.id && !self.movieViewModel.isLastPage ) {
+                            self.movieViewModel.fetchMovies()
+                        }
+                }
+            }.onAppear {
+                if(!self.movieViewModel.isLastPage) {
+                    self.movieViewModel.fetchMovies()
+                }
             }
         }
     }
-    
 }
 
 struct MovieView_Previews: PreviewProvider {
